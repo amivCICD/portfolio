@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>A. MODYMAN Resume</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="input.css" rel="stylesheet" />
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-tertiary-fixed-variant": "#802900",
+                        "on-secondary-fixed": "#022100",
+                        "surface-bright": "#3a3939",
+                        "on-tertiary": "#5b1b00",
+                        "on-secondary-fixed-variant": "#095300",
+                        "on-error-container": "#ffdad6",
+                        "surface-tint": "#b1c5ff",
+                        "surface": "#131313",
+                        "error": "#ffb4ab",
+                        "background": "#131313",
+                        "on-primary-container": "#a5bdff",
+                        "on-background": "#e5e2e1",
+                        "inverse-surface": "#e5e2e1",
+                        "surface-container-lowest": "#0e0e0e",
+                        "surface-container-low": "#1c1b1b",
+                        "secondary-fixed": "#79ff5b",
+                        "on-tertiary-fixed": "#380d00",
+                        "on-surface-variant": "#c3c6d5",
+                        "on-primary-fixed-variant": "#00419e",
+                        "secondary-container": "#2ff801",
+                        "surface-container-highest": "#353534",
+                        "error-container": "#93000a",
+                        "surface-variant": "#353534",
+                        "tertiary-fixed": "#ffdbcf",
+                        "outline": "#8d909e",
+                        "tertiary-fixed-dim": "#ffb59a",
+                        "surface-container-high": "#2a2a2a",
+                        "secondary-fixed-dim": "#2ae500",
+                        "primary": "#b1c5ff",
+                        "on-secondary": "#053900",
+                        "surface-dim": "#131313",
+                        "primary-container": "#0047ab",
+                        "secondary": "#d7ffc5",
+                        "inverse-primary": "#2559bd",
+                        "primary-fixed": "#dae2ff",
+                        "inverse-on-surface": "#313030",
+                        "on-tertiary-container": "#ffaa8a",
+                        "on-primary": "#002c70",
+                        "tertiary-container": "#8b2e01",
+                        "on-secondary-container": "#0f6d00",
+                        "on-primary-fixed": "#001946",
+                        "surface-container": "#201f1f",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "tertiary": "#ffb59a",
+                        "outline-variant": "#434653",
+                        "on-surface": "#e5e2e1",
+                        "on-error": "#690005"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #0A0A0A;
+            color: #E5E2E1;
+            font-family: 'Manrope', sans-serif;
+        }
+        .architectural-grid {
+            background-image: linear-gradient(#4346530a 1px, transparent 1px), linear-gradient(90deg, #4346530a 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+        .hide-scrollbar::-webkit-scrollbar {
+            height: 4px;
+        }
+        .hide-scrollbar::-webkit-scrollbar-track {
+            background: rgba(67, 70, 83, 0.1);
+        }
+        .hide-scrollbar::-webkit-scrollbar-thumb {
+            background: #2ae500;
+            border-radius: 2px;
+        }
+        .hide-scrollbar {
+            scrollbar-width: thin;
+            scrollbar-color: #2ae500 rgba(67, 70, 83, 0.1);
+        }
+    </style></head>
+<body class="architectural-grid">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 rounded-none bg-[#131313]/70 backdrop-blur-xl border-b border-[#434653]/15">
+<div class="flex justify-between items-center px-8 py-4 max-w-[1440px] mx-auto font-['Manrope'] tracking-[-0.04em] antialiased">
+<div class="text-xl font-black tracking-tighter text-[#E5E2E1]">Resume/Portfolio</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#8D909E] hover:text-[#E5E2E1] transition-colors" href="#experience">Experience</a>
+<a class="text-[#8D909E] hover:text-[#E5E2E1] transition-colors" href="#education">Education</a>
+<a class="text-[#8D909E] hover:text-[#E5E2E1] transition-colors" href="#projects">Projects</a>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 font-bold hover:bg-[#2A2A2A] transition-all duration-300 active:scale-95">Download Resume</button>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-[#E5E2E1]">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-32 px-6 md:px-12 max-w-[1440px] mx-auto">
+<!-- Hero Section: Intentional Asymmetry -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end mb-32">
+<div class="lg:col-span-8">
+<p class="text-secondary-fixed text-[0.6875rem] uppercase tracking-[0.2em] mb-4 font-bold">Systems Engineer // Full-Stack Developer</p>
+<h1 class="text-[clamp(3.5rem,10vw,8rem)] font-extrabold leading-[0.85] tracking-[-0.06em] uppercase">
+                    A.<br/>MODYMAN
+                </h1>
+<div class="mt-8 max-w-xl">
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                        Architecting robust digital infrastructures with surgical precision. Specializing in high-performance full-stack environments and scalable system design.
+                    </p>
+</div>
+</div>
+<div class="lg:col-span-4 relative group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative border border-outline-variant/20">
+<img alt="A. Modyman Professional Portrait" class="w-full h-full object-cover grayscale contrast-125 opacity-80 group-hover:opacity-100 transition-opacity duration-500" data-alt="Professional portrait of a male developer in architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-W2A78C3h8oSEvApXtH1EOrAPdkWo1BQe6Tu2RBSY0imbUGDQ0FedAEla1EJoSNpzIeF5MJ8SSM_4h5aL_Lzz0pNHjpoxxeVv1SAiRaS9fAprrnjaV0RJS-QQvk6CmFb9G2ZjbeyglVL2fv0DschuTgHUeZW917ElqPshiZhIkYywEvYZaIH3hbfOFY4ggl2YiUs3LK-_hDIMzsssQecOIIzoC6a5Le6FzgxeKnVjGelsHoAMn6VzdfShaC8SaIyxPLjlne3Outzj"/>
+<div class="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent"></div>
+</div>
+<div class="absolute -bottom-4 -left-4 bg-primary-container p-6">
+<span class="material-symbols-outlined text-4xl text-on-primary">terminal</span>
+</div>
+</div>
+</section>
+<!-- Education & Certifications: Priority Grid -->
+<section class="mb-32" id="education">
+<div class="flex items-center gap-4 mb-12">
+<h2 class="text-2xl font-bold tracking-tighter uppercase">Academic Foundation</h2>
+<div class="h-px flex-grow bg-outline-variant/20"></div>
+<span class="text-secondary-fixed-dim text-xs font-mono">01 // EDU</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-1">
+<!-- University -->
+<div class="bg-surface-container-low p-8 border border-outline-variant/10 hover:bg-surface-container transition-colors">
+<p class="text-secondary text-[0.6875rem] uppercase tracking-widest mb-4">Degree</p>
+<h3 class="text-xl font-bold mb-2">Western Governors University</h3>
+<p class="text-on-surface-variant">B.S. Software Engineering</p>
+<p class="text-outline text-sm mt-4 font-mono uppercase tracking-tighter">Class of 2024</p>
+</div>
+<!-- Certifications -->
+<div class="bg-surface-container-low p-8 border border-outline-variant/10 lg:col-span-2">
+<p class="text-secondary text-[0.6875rem] uppercase tracking-widest mb-6">Professional Certifications</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed-dim">verified</span>
+<div>
+<h4 class="font-bold text-sm uppercase tracking-tight">CompTIA Project+</h4>
+<p class="text-xs text-outline">Project Management Professional</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed-dim">verified</span>
+<div>
+<h4 class="font-bold text-sm uppercase tracking-tight">AWS Certified Developer</h4>
+<p class="text-xs text-outline">Associate Level Certification</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed-dim">verified</span>
+<div>
+<h4 class="font-bold text-sm uppercase tracking-tight">ITIL® 4 Foundation</h4>
+<p class="text-xs text-outline">IT Service Management</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed-dim">verified</span>
+<div>
+<h4 class="font-bold text-sm uppercase tracking-tight">Oracle Java SE 8</h4>
+<p class="text-xs text-outline">Certified Associate Programmer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Stack: High Contrast Icons -->
+<section class="mb-32">
+<div class="flex items-center gap-4 mb-12">
+<h2 class="text-2xl font-bold tracking-tighter uppercase">Technical Stack</h2>
+<div class="h-px flex-grow bg-outline-variant/20"></div>
+<span class="text-secondary-fixed-dim text-xs font-mono">02 // TECH</span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-px bg-outline-variant/10">
+<div class="bg-surface p-8 flex flex-col items-center justify-center group hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-4xl mb-4 text-outline group-hover:text-secondary-fixed-dim transition-colors">code</span>
+<span class="text-[0.6875rem] uppercase tracking-widest font-bold">TypeScript</span>
+</div>
+<div class="bg-surface p-8 flex flex-col items-center justify-center group hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-4xl mb-4 text-outline group-hover:text-secondary-fixed-dim transition-colors">data_object</span>
+<span class="text-[0.6875rem] uppercase tracking-widest font-bold">Java</span>
+</div>
+<div class="bg-surface p-8 flex flex-col items-center justify-center group hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-4xl mb-4 text-outline group-hover:text-secondary-fixed-dim transition-colors">data_object</span>
+<span class="text-[0.6875rem] uppercase tracking-widest font-bold">React.js</span>
+</div>
+<div class="bg-surface p-8 flex flex-col items-center justify-center group hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-4xl mb-4 text-outline group-hover:text-secondary-fixed-dim transition-colors">storage</span>
+<span class="text-[0.6875rem] uppercase tracking-widest font-bold">PostgreSQL</span>
+</div>
+<div class="bg-surface p-8 flex flex-col items-center justify-center group hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-4xl mb-4 text-outline group-hover:text-secondary-fixed-dim transition-colors">cloud</span>
+<span class="text-[0.6875rem] uppercase tracking-widest font-bold">AWS Cloud</span>
+</div>
+<div class="bg-surface p-8 flex flex-col items-center justify-center group hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-4xl mb-4 text-outline group-hover:text-secondary-fixed-dim transition-colors">terminal</span>
+<span class="text-[0.6875rem] uppercase tracking-widest font-bold">Node.js</span>
+</div>
+<div class="bg-surface p-8 flex flex-col items-center justify-center group hover:bg-surface-container-high transition-all">
+<span class="material-symbols-outlined text-4xl mb-4 text-outline group-hover:text-secondary-fixed-dim transition-colors">grid_view</span>
+<span class="text-[0.6875rem] uppercase tracking-widest font-bold">Docker</span>
+</div>
+</section>
+<!-- Compact Experience: High Density Timeline -->
+<section class="mb-32" id="experience">
+<div class="flex items-center gap-4 mb-12">
+<h2 class="text-2xl font-bold tracking-tighter uppercase">Employment History</h2>
+<div class="h-px flex-grow bg-outline-variant/20"></div>
+<span class="text-secondary-fixed-dim text-xs font-mono">03 // EXP</span>
+</div>
+<div class="space-y-1">
+<!-- Role 1 -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-surface-container-low p-8 border-l-2 border-primary-container">
+<div class="md:col-span-3">
+<p class="font-bold text-lg">Lead Engineer</p>
+<p class="text-outline text-sm uppercase tracking-wider">TechNova Systems</p>
+<p class="text-secondary-fixed-dim text-xs font-mono mt-2">2023 — PRESENT</p>
+</div>
+<div class="md:col-span-9">
+<p class="text-on-surface-variant leading-relaxed">
+                            Overseeing the migration of legacy monolithic architectures to containerized microservices. Improved deployment frequency by 40% through CI/CD optimization.
+                        </p>
+</div>
+</div>
+<!-- Role 2 -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 bg-surface-container-lowest p-8 border-l-2 border-outline-variant/30">
+<div class="md:col-span-3">
+<p class="font-bold text-lg">Full-Stack Intern</p>
+<p class="text-outline text-sm uppercase tracking-wider">BluePrint Digital</p>
+<p class="text-secondary-fixed-dim text-xs font-mono mt-2">2022 — 2023</p>
+</div>
+<div class="md:col-span-9">
+<p class="text-on-surface-variant leading-relaxed">
+                            Developed internal tooling using React and Express.js. Implemented secure authentication protocols and optimized database queries for 15% faster page loads.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Selected Projects: Refined Bento -->
+<section class="mb-32" id="projects">
+<div class="flex items-center gap-4 mb-12">
+<h2 class="text-2xl font-bold tracking-tighter uppercase">Selected Works</h2>
+<div class="h-px flex-grow bg-outline-variant/20 min-w-[350px] md:min-w-[450px] snap-start flex-shrink-0"></div>
+<span class="text-secondary-fixed-dim text-xs font-mono">04 // PRJ</span>
+</div>
+<div class="flex overflow-x-auto gap-6 pb-8 hide-scrollbar snap-x snap-mandatory">
+<!-- Large Project -->
+<div class="group relative overflow-hidden bg-surface-container-high border border-outline-variant/20 min-w-[350px] md:min-w-[450px] snap-start flex-shrink-0">
+<div class="p-8 h-full flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-6">
+<span class="text-primary font-mono text-xs">V.01 // ENGINE</span>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">north_east</span>
+</div>
+<h3 class="text-3xl font-black mb-4 tracking-tighter uppercase">Nexus Core Dashboard</h3>
+<p class="text-on-surface-variant leading-relaxed max-w-md">
+                                A real-time data visualization platform for monitoring large-scale server clusters. Built with WebSockets and D3.js.
+                            </p>
+</div>
+<div class="mt-12 flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-highest text-[10px] uppercase font-bold text-outline">React</span>
+<span class="px-3 py-1 bg-surface-container-highest text-[10px] uppercase font-bold text-outline">GraphQL</span>
+<span class="px-3 py-1 bg-surface-container-highest text-[10px] uppercase font-bold text-outline">Redis</span>
+</div>
+</div>
+<div class="absolute -right-20 -bottom-20 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[240px]">settings_input_component</span>
+</div>
+</div>
+<!-- Small Project 1 -->
+<div class="group bg-surface-container border border-outline-variant/20 p-8 hover:bg-surface-container-high transition-all min-w-[350px] md:min-w-[450px] snap-start flex-shrink-0">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-xl font-bold uppercase tracking-tight">Cipher Vault</h3>
+<span class="material-symbols-outlined text-secondary-fixed">shield</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-6">End-to-end encrypted password manager with biometric authentication hooks.</p>
+<div class="flex gap-4">
+<span class="text-xs font-mono text-outline">NODE.JS</span>
+<span class="text-xs font-mono text-outline">CRYPTO.JS</span>
+</div>
+</div>
+<!-- Small Project 2 -->
+<div class="group bg-surface-container border border-outline-variant/20 p-8 hover:bg-surface-container-high transition-all min-w-[350px] md:min-w-[450px] snap-start flex-shrink-0">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-xl font-bold uppercase tracking-tight">Grid Alpha</h3>
+<span class="material-symbols-outlined text-secondary-fixed">grid_4x4</span>
+</div>
+<p class="text-sm text-on-surface-variant mb-6">A lightweight CSS framework optimized for architectural layout systems.</p>
+<div class="flex gap-4">
+<span class="text-xs font-mono text-outline">SASS</span>
+<span class="text-xs font-mono text-outline">POSTCSS</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer: Simplified Technical Layout -->
+<footer class="w-full border-t border-[#434653]/15 bg-[#0E0E0E] mt-32">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-12 w-full max-w-[1440px] mx-auto">
+<div class="mb-8 md:mb-0">
+<p class="text-[#E5E2E1] font-bold text-xl mb-2">A. MODYMAN</p>
+<p class="text-[#8D909E] font-['Manrope'] text-[0.6875rem] uppercase tracking-[0.1em]">© 2024 ARCHITECT.V3 // ENGINEERED PRECISION</p>
+</div>
+<div class="flex flex-wrap justify-center gap-12">
+<div class="flex flex-col gap-2">
+<span class="text-secondary-fixed text-[0.6875rem] uppercase font-bold tracking-widest">Connect</span>
+<div class="flex gap-6">
+<a class="text-[#8D909E] hover:text-[#39FF14] transition-opacity font-['Manrope'] text-[0.6875rem] uppercase tracking-[0.1em]" href="#">GitHub</a>
+<a class="text-[#8D909E] hover:text-[#39FF14] transition-opacity font-['Manrope'] text-[0.6875rem] uppercase tracking-[0.1em]" href="#">LinkedIn</a>
+<a class="text-[#8D909E] hover:text-[#39FF14] transition-opacity font-['Manrope'] text-[0.6875rem] uppercase tracking-[0.1em]" href="#">Terminal</a>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-secondary-fixed text-[0.6875rem] uppercase font-bold tracking-widest">Inquiry</span>
+<a class="text-[#E5E2E1] hover:text-[#39FF14] transition-opacity font-bold" href="mailto:hello@modyman.tech">hello@modyman.tech</a>
+</div>
+</div>
+<div class="mt-8 md:mt-0">
+<button class="bg-primary-container text-on-primary-container px-8 py-3 font-bold hover:bg-[#2A2A2A] transition-all duration-300">
+                    Get In Touch
+                </button>
+</div>
+</div>
+</footer>
+</body></html>
