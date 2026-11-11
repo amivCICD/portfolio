@@ -99,6 +99,45 @@ const projects = [
         button2Title: "Documentation",
         videoURL: null
     },
+    {
+        subtitle: "Wordle Multi-Player via Websockets",
+        version: "2.0",
+        imageSrc: "/chic_wordle_portfolio_3_screens.png",
+        mainTitle: "Wordle Multi-Player",
+        bulletPoints: [
+            "Spring Boot, TypeScript powered \"Chic\" style and themed Wordle game that allows replayability after the initial word of the day.",
+        ],
+        sideNote: "",
+        tags: [
+            "Java",
+            "Spring Boot",
+            "Javascript",
+            "Websockets",
+        ],
+        button1Link: "https://github.com/amivCICD/word",
+        button1Title: "View Github Repo.",
+        button2Link: "https://word.es9.app",
+        button2Title: "Play Game",
+        videoURL: null
+    },
+    {
+        subtitle: "",
+        version: "",
+        imageSrc: "",
+        mainTitle: "",
+        bulletPoints: [
+            "",
+        ],
+        sideNote: "",
+        tags: [
+            "",
+        ],
+        button1Link: "",
+        button1Title: "View Github Repo.",
+        button2Link: "",
+        button2Title: "Documentation",
+        videoURL: null
+    },
     // {
     //     subtitle: "",
     //     version: "",
