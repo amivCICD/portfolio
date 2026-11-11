@@ -106,6 +106,7 @@ const projects = [
         mainTitle: "Wordle Multi-Player",
         bulletPoints: [
             "Spring Boot, TypeScript powered \"Chic\" style and themed Wordle game that allows replayability after the initial word of the day.",
+            "Play with friends in real-time with instant messaging, or play solo with a random word generator.",
         ],
         sideNote: "",
         tags: [
@@ -120,24 +121,24 @@ const projects = [
         button2Title: "Play Game",
         videoURL: null
     },
-    {
-        subtitle: "",
-        version: "",
-        imageSrc: "",
-        mainTitle: "",
-        bulletPoints: [
-            "",
-        ],
-        sideNote: "",
-        tags: [
-            "",
-        ],
-        button1Link: "",
-        button1Title: "View Github Repo.",
-        button2Link: "",
-        button2Title: "Documentation",
-        videoURL: null
-    },
+    // {
+    //     subtitle: "",
+    //     version: "",
+    //     imageSrc: "",
+    //     mainTitle: "",
+    //     bulletPoints: [
+    //         "",
+    //     ],
+    //     sideNote: "",
+    //     tags: [
+    //         "",
+    //     ],
+    //     button1Link: "",
+    //     button1Title: "View Github Repo.",
+    //     button2Link: "",
+    //     button2Title: "Documentation",
+    //     videoURL: null
+    // },
     // {
     //     subtitle: "",
     //     version: "",
